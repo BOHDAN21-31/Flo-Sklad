@@ -1,16 +1,119 @@
-# React + Vite
+# Flo-Sklad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Система управління складом «Flo-Sklad»
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Опис
 
-## React Compiler
+Flo-Sklad — це веб-додаток для обліку товарів, руху на складі, замовлень та контролю запасів.  
+Мета — спростити процеси логістики, зменшити помилки та автоматизувати рутинні операції.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Функціональність
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Реєстрація / авторизація користувачів  
+- Додавання / редагування / 
+- Відстеження залишків на складі    
+- Звіти та статистика  
+- Ролі / права доступу для користувачів
+
+---
+
+## 🛠 Технології
+
+| Компонент | Технологія / інструмент |
+|-----------|--------------------------|
+| Backend   | Node.js / Express 
+| База даних |PostgreSQL
+| Frontend  | HTML / CSS / JavaScript / (React, tailwindcss)
+---
+
+## 🧩 Структура проекту
+
+Flo-Sklad/
+├── backend/ 
+├── frontend/
+├── database/
+├── docs/ # 
+├── tests/ # модульні та інтеграційні тести
+└── README.md
+
+---
+
+## 📦 Встановлення та запуск
+
+1. Склонуй репозиторій  
+   ```bash
+   git clone https://github.com/BOHDAN21-31/Flo-Sklad.git
+
+    Перейди в папку проекту
+
+cd Flo-Sklad
+
+Налаштуй середовище
+
+    Створи файл .env з конфігурацією (наприклад, дані доступу до СУБД, секретні ключі)
+
+    Встанови залежності
+
+    # для backend
+    pip install -r requirements.txt
+    # або
+    npm install
+
+    # для frontend
+    npm install
+
+Ініціалізуй базу даних
+
+# приклад для Django або іншої ORM
+python manage.py migrate
+# або
+npm run migrate
+
+Запусти сервер
+
+# backend
+python manage.py runserver
+# або
+npm start
+
+# frontend
+npm run serve
+
+Відкрий браузер і перейти за адресою
+
+    http://localhost:8000
+    # або порт, який вказаний в конфігурації
+
+👥 Ролі та права доступу
+
+    Адміністратор — повний доступ до всіх функцій
+
+    Користувач / оператор — обмежений доступ: тільки робота зі своїми функціями
+
+    Гість / переглядач — перегляд даних, без прав на зміну
+
+📈 Подальший розвиток / TODO
+
+    Додати функціонал імпорту / експорту (Excel, CSV)
+
+    Мобільна версія / адаптивний дизайн
+
+    Повідомлення (email / SMS)
+
+    Розширені фільтри / сегментація
+
+    Логування дій користувачів
+
+🧾 Ліцензія
+
+Цей проект поширюється під ліцензією MIT (Caobara)
+
+Якщо маєш питання або хочеш співпрацювати — зв'яжися зі мною:
+
+    GitHub: BOHDAN21-31
+
+Email: bohdan.ivanii@gmail.com
