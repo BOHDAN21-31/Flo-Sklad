@@ -1,52 +1,52 @@
-import Photo1 from "../../public/vladik.jpg";
-import Photo2 from "../../public/bodik_worker.jpg";
+import Photo1 from "../public/vladik.jpg";
+import Photo2 from "../public/bodik_worker.jpg";
 
 const people = [
     {
-        name: 'Алексей Зверев',
-        role: 'Owner Sklad',
+        name: 'Олексій Зверев',
+        role: 'Головний',
         imageUrl:
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O5qSKQg5ZqLLHgheFNBNIxzn9Q37TIGd9Q&s',
     },
     {
         name: 'Максим Мунтян',
-        role: 'Owner VL-Shop',
+        role: 'Головний магазину',
         imageUrl:
             'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
     {
         name: 'Назар Мунтян',
-        role: 'Owner-Vishneve',
+        role: 'Головний складу',
         imageUrl:
             'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
     {
         name: 'Вадим Ситко',
-        role: 'Owner-Logan-Vishna',
+        role: 'Зам головного складу',
         imageUrl:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
     {
         name: 'Владислав Перегонов',
-        role: 'Owner-Kolgoti',
+        role: 'Зам по роботі з оптовим товаром',
         imageUrl:
             '../../public/vladik.jpg',
     },
     {
-        name: 'Богдан Иваний',
-        role: 'Owner-baton',
+        name: 'Богдан Іваній',
+        role: 'Розробник',
         imageUrl:
             '../../public/bodik_worker.jpg',
     },
     {
         name: 'Пяточкин Саша',
-        role: 'Owner-Iphone-13',
+        role: 'Розробник баз данних',
         imageUrl:
             'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
     {
-        name: 'Дариус',
-        role: 'Owner-Master-Vagon',
+        name: 'Даріус',
+        role: 'Водій',
         imageUrl:
             'https://www.postavy.cz/foto/20599-darius-foto.jpg',
     },
@@ -61,7 +61,7 @@ export default function Example() {
                         Наша команда
                     </h2>
                     <p className="mt-6 text-lg/8 text-gray-600">
-                        Мы — динамичная группа людей, увлеченных своим делом и стремящихся к достижению наилучших результатов.
+                       Ми — динамічна група людей, зацікавленим своєю справою і прагнемо до досягнення накйращих результатів.
                     </p>
                 </div>
                 <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">

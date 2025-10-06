@@ -3,9 +3,9 @@ export default function Contacts() {
         <section className="bg-white py-16 px-6 lg:px-20">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900"> Контакты</h2>
+                    <h2 className="text-3xl font-bold text-gray-900"> Контакти</h2>
                     <p className="mt-2 text-gray-600 max-w-xl">
-                        Связыватся только по нужно информации, просто так не тревожить
+                        Просимо телефонувати лише з важної інформації
                     </p>
                 </div>
 
@@ -46,23 +46,23 @@ export default function Contacts() {
                 <div className="mt-16">
                     <h2 className="text-2xl font-bold text-gray-900">Локации </h2>
                     <p className="mt-2 text-gray-600 max-w-xl">
-                       Здесь находяться локации складов на даный момент
+                       Тут знаходятся локації складів
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
                         <div className="p-6 rounded-2xl shadow-sm bg-gray-50">
-                            <h3 className="text-lg font-semibold text-gray-900">Киев</h3>
-                            <p className="text-gray-600">ул. Николая Пимоненко, 13Ж</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Київ</h3>
+                            <p className="text-gray-600">ул. Миколая Пимоненко, 13Ж</p>
                             <a href="https://share.google/XHM7ELm4Q5HvKfyYA" className="text-indigo-600">
-                                Как добратся?
+                                Як добратися?
                             </a>
                         </div>
 
                         <div className="p-6 rounded-2xl shadow-sm bg-gray-50">
-                            <h3 className="text-lg font-semibold text-gray-900">Вишневе, Киевская область</h3>
-                            <p className="text-gray-600">ул. Промышленная, 5А</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Вишневе, Київська область</h3>
+                            <p className="text-gray-600">ул. Промислова, 5А</p>
                             <a href="https://share.google/7v4h4WyqqitkeM0qb" className="text-indigo-600">
-                                Как добратся?
+                                Як добратися?
                             </a>
                         </div>
                     </div>

@@ -4,8 +4,8 @@ export default function Pastavka() {
     return (
         <section className="p-6">
         <div className="p-6">
-            <h1 className="text-2xl font-bold mb-4">Таблица поставки</h1>
-            <p className="text-gray-700">Здесь находиться таблица поставки цветов на актульную дату, со временем даные могут менятся.</p>
+            <h1 className="text-2xl font-bold mb-4">Таблиця постачання</h1>
+            <p className="text-gray-700">Тут знаходиться таблиця поставки квітів на актуальну дату, з часом данні можуть змінюватися.</p>
         </div>
             <div className="relative w-full pb-[70%] h-0 overflow-hidden rounded-lg shadow-lg">
                 <iframe

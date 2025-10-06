@@ -1,7 +1,7 @@
 export default function Graph() {
     return (
         <div className="p-6">
-            <h1 className="text-2xl font-bold mb-4 text-center">График работников</h1>
+            <h1 className="text-2xl font-bold mb-4 text-center">Графік робітників</h1>
             <p className="text-gray-700"></p>
             <div className="relative w-full pb-[70%] h-0 overflow-hidden rounded-lg shadow-lg">
             <iframe

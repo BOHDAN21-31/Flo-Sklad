@@ -24,45 +24,45 @@ import {
 } from "@heroicons/react/24/outline"
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid"
 
-import logo from "../public/IMG_3839.png"
+import logo from "./public/IMG_3839.png"
 
 const products = [
     {
-        name: "Инструкция",
-        description: "Ознакомьтесь с инструкцией по зачистке цветка перед началом работы",
+        name: "Інструкція",
+        description: "Ознайомтесь з інструкцією перед початком роботи",
         to: "/instruction",
         icon: ChartPieIcon,
     },
     {
-        name: "Задачи на свободное время",
-        description: "Задачи, которые можно выполнять в свободное время",
-        to: "/404_found",
+        name: "Працевлаштування",
+        description: "Задачі, які можна виконувати у вільний час",
+        to: "/find_work",
         icon: CursorArrowRaysIcon,
     },
     {
-        name: "Тесты по цветку",
+        name: "Тести по квітам",
         description:
-            "Пройдите тесты для повышения зарплаты или поддержания знаний по работе с цветами",
-        to: "/404_found",
+            "Пройдіть тестування для підвишеня своїх знань",
+        to: "/TestFlower",
         icon: FingerPrintIcon,
     },
     {
-        name: "График",
-        description: "График работников склада",
+        name: "Графік",
+        description: "Графік співробітників склада",
         to: "/graph",
         icon: SquaresPlusIcon,
     },
     {
-        name: "Виды цветов",
-        description: "Все цветы, которые приезжали или приезжают к нам",
+        name: "Види квітів",
+        description: "Всі квіти, які в нас бувають",
         to: "/404_found",
         icon: ArrowPathIcon,
     },
 ]
 
 const callsToAction = [
-    { name: "Камеры", to: "/404_found", icon: PlayCircleIcon },
-    { name: "Связаться с нами", to: "/contact", icon: PhoneIcon },
+    { name: "Камери", to: "/404_found", icon: PlayCircleIcon },
+    { name: "Зв'язок з нами", to: "/contact", icon: PhoneIcon },
 ]
 
 export default function Header() {
@@ -87,7 +87,7 @@ export default function Header() {
                         onClick={() => setMobileMenuOpen(true)}
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
                     >
-                        <span className="sr-only">Открыть меню</span>
+                        <span className="sr-only">Відкрити меню</span>
                         <Bars3Icon aria-hidden="true" className="h-6 w-6" />
                     </button>
                 </div>
@@ -95,7 +95,7 @@ export default function Header() {
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
                     <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold text-white">
-                            Тик-Тик
+                            Більше
                             <ChevronDownIcon aria-hidden="true" className="h-5 w-5 text-gray-500" />
                         </PopoverButton>
 
@@ -141,13 +141,13 @@ export default function Header() {
                     </Popover>
 
                     <Link to="/" className="text-sm font-semibold text-white hover:text-gray-400">
-                        Главная
+                        Головна
                     </Link>
                     <Link
                         to="/postavka"
                         className="text-sm font-semibold text-white hover:text-gray-400"
                     >
-                        Поставка 18.10.2025
+                        Постачання 18.10.2025
                     </Link>
                     <Link to="/team" className="text-sm font-semibold text-white hover:text-gray-400">
                         Команда
@@ -155,8 +155,8 @@ export default function Header() {
                 </PopoverGroup>
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link to="/404_found" className="text-sm font-semibold text-white hover:text-gray-400">
-                        Войти <span aria-hidden="true">&rarr;</span>
+                    <Link to="/login" className="text-sm font-semibold text-white hover:text-gray-400">
+                        Вхід <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </div>
             </nav>
@@ -174,7 +174,7 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                             className="-m-2.5 rounded-md p-2.5 text-gray-400"
                         >
-                            <span className="sr-only">Закрыть меню</span>
+                            <span className="sr-only">Закрити меню</span>
                             <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                         </button>
                     </div>
@@ -182,7 +182,6 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-white/10">
                             <div className="space-y-2 py-6">
-                                {/* Disclosure для выпадающего меню */}
                                 <Disclosure as="div" className="-mx-3">
                                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">
                                         Тик-Тик
@@ -203,19 +202,17 @@ export default function Header() {
                                         ))}
                                     </DisclosurePanel>
                                 </Disclosure>
-
-                                {/* Остальные ссылки */}
                                 <Link
                                     to="/"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                                 >
-                                    Главная
+                                    Головна
                                 </Link>
                                 <Link
                                     to="/postavka"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                                 >
-                                    Поставка 18.10.2025
+                                    Постачання 18.10.2025
                                 </Link>
                                 <Link
                                     to="/team"
@@ -229,7 +226,7 @@ export default function Header() {
                                     to="/login"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5"
                                 >
-                                    Войти
+                                    Вхід
                                 </Link>
                             </div>
                         </div>

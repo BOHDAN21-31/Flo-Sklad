@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom"
 
 const links = [
-    { name: "Поставка 18.10.2025", to: "/postavka" },
-    { name: "График", to: "/graph" },
-    { name: "Виды цветов", to: "/404_found" },
-    { name: "Связаться с нами", to: "/contact" },
+    { name: "Постачання 18.10.2025", to: "/postavka" },
+    { name: "Графік", to: "/graph" },
+    { name: "Види квітів", to: "/404_found" },
+    { name: "Зв'язок з намі", to: "/contact" },
 ]
 
 const stats = [
-    { name: "Количество сотрудников", value: "20" },
-    { name: "Количество складов", value: "2" },
-    { name: "Количество магазинов", value: "7" },
-    { name: "Сотрудников в работе сегодня", value: "8" },
+    { name: "Кількість співробітників", value: "20" },
+    { name: "Кількість складив", value: "2" },
+    { name: "Кількість магазину", value: "7" },
+    { name: "Співробітників в роботі сьогодні", value: "8" },
 ]
 
 export default function Golovna() {
@@ -43,8 +43,8 @@ export default function Golovna() {
                         Flo Sklad
                     </h2>
                     <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                        Вас приветствует FLO SKLAD сайт сделан для быстрого доступа к
-                        информации, а так же для ознакомления новичков с нашим отделом
+                        Вас Вітає FLO SKLAD сайт зроблений для швидкого доступу до
+                        інформації, а також для ознайомлення новеньких з нами.
                     </p>
                 </div>
 
